@@ -42,20 +42,19 @@ class AlienFXControllerM11xr3(alienfx_controller.AlienFXController):
     DEFAULT_SPEED = 200
     MIN_SPEED = 50
     
-    # Zone codes
-    LEFT_KEYBOARD = 0x0008
-    MIDDLE_LEFT_KEYBOARD = 0x0004
-    MIDDLE_RIGHT_KEYBOARD = 0x0002
+    # Zone codes / One keyboard zone
+    LEFT_KEYBOARD = 0x0001
+    MIDDLE_LEFT_KEYBOARD = 0x0001
+    MIDDLE_RIGHT_KEYBOARD = 0x0001
     RIGHT_KEYBOARD = 0x0001
-    # Both speakers change together
-    RIGHT_SPEAKER = 0x0020
-    LEFT_SPEAKER = 0x0040
-    ALIEN_HEAD = 0x0080
+    LEFT_SPEAKER = 0x0020
+    RIGHT_SPEAKER = 0x0040
     LOGO = 0x0100
-    TOUCH_PAD = 0x0200
     MEDIA_BAR = 0x0800
+    ALIEN_HEAD = 0x2000
+    TOUCH_PAD = 0x0000
     POWER_BUTTON = 0x2000
-    HDD_LEDS = 0x4000
+    HDD_LEDS = 0x0000
 
     # Reset codes
     RESET_ALL_LIGHTS_OFF = 3
